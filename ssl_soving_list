@@ -1,0 +1,10 @@
+//=================== refresh ssl certifcate refresss for websocket
+
+certbot certonly --force-renew -d *.gravityshift.io
+
+//=======================if sslinclude then include ssl link path in env ===================
+Braodcasting_Scheme=https
+LARAVEL_WEBSOCKETS_SSL_LOCAL_PK=/etc/letsencrypt/live/gravityshift.io-0006/priv$
+LARAVEL_WEBSOCKETS_SSL_LOCAL_CERT=/etc/letsencrypt/live/gravityshift.io-0006/ce$
+LARAVEL_WEBSOCKETS_SSL_PASSPHRASE=null
+
